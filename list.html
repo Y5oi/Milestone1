@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="list.css" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header>
+    <a href="/">
+      <img src="todologo.png"
+           alt="todo list logo"
+           float="right"
+           width="15%"
+           id="logo">
+    </a>
+
+    <div>
+      <h1>To Do Lists</h1>
+      <h2>make your own!</h2>
+    <div>
+
+    <nav>
+        <ul class="userLogin">
+            <li> <a href="index.html">|UserLogin|</a> </li>
+            <li> <a href="index.html">|Sign Up|</a></li> 
+        </ul>
+    </nav>
+  </header>
+
+  <main class="flex flex-col">
+    <div id="goback">
+        <a href="index.html">&larr; Home</a>
+    </div>
+    <div class="flex flex-col items-center">
+        <a href="createNew.html">
+            <button id="create-new-btn" class="hover:scale-125 transition-all shadow-lg">Create a new task</button>
+        </a>
+    </div>
+    <div id="tasks">
+        <div class="category">
+            <h1>Classwork</h1> <hr>
+            <div class="task">
+                <p class="taskName"><a href="detail.html">Finish webapps Milestone 1.</a></p>
+                <p class="taskInfo">Ends Sunday. Very Urgent.</p>
+                <p class="taskActions">
+                    <a href="list.html"><button class="taskUpdateBtn hover:scale-105 transition-all shadow-md">Update</button></a>
+                    <a href="list.html"><button class="taskDeleteBtn hover:scale-105 transition-all shadow-md">Delete</button></a>
+                </p>
+            </div> <hr>
+            <div class="task">
+                <p class="taskName"><a href="detail.html">Finish parser assignment.</a></p>
+                <p class="taskInfo">Ends Friday.</p>
+                <p class="taskActions">
+                    <a href="list.html"><button class="taskUpdateBtn hover:scale-105 transition-all shadow-md">Update</button></a>
+                    <a href="list.html"><button class="taskDeleteBtn hover:scale-105 transition-all shadow-md">Delete</button></a>
+                </p>
+            </div> <hr>
+            <div class="task">
+                <p class="taskName"><a href="detail.html">Email senior design progess evalutaion to advisor.</a></p>
+                <p class="taskInfo">Ends March 17th. Not urgent.</p>
+                <p class="taskActions">
+                    <a href="list.html"><button class="taskUpdateBtn hover:scale-105 transition-all shadow-md">Update</button></a>
+                    <a href="list.html"><button class="taskDeleteBtn hover:scale-105 transition-all shadow-md">Delete</button></a>
+                </p>
+            </div> <hr>
+        </div>
+        <div class="category">
+            <h1>Extracurricular</h1> <hr>
+            <div class="task">
+                <p class="taskName"><a href="detail.html">Submit van request form.</a></p>
+                <p class="taskInfo">Ends Tuesday. Urgent.</p>
+                <p class="taskActions">
+                    <a href="list.html"><button class="taskUpdateBtn hover:scale-105 transition-all shadow-md">Update</button></a>
+                    <a href="list.html"><button class="taskDeleteBtn hover:scale-105 transition-all shadow-md">Delete</button></a>
+                </p>
+            </div> <hr>
+            <div class="task">
+                <p class="taskName"><a href="detail.html">SGA Meeting.</a></p>
+                <p class="taskInfo">Ends Wednesday.</p>
+                <p class="taskActions">
+                    <a href="list.html"><button class="taskUpdateBtn hover:scale-105 transition-all shadow-md">Update</button></a>
+                    <a href="list.html"><button class="taskDeleteBtn hover:scale-105 transition-all shadow-md">Delete</button></a>
+                </p>
+            </div> <hr>
+            <div class="task">
+                <p class="taskName"><a href="detail.html">Upload Meeting Minutes.</a></p>
+                <p class="taskInfo">Ends Wednesday. Not urgent at all.</p>
+                <p class="taskActions">
+                    <a href="list.html"><button class="taskUpdateBtn hover:scale-105 transition-all shadow-md">Update</button></a>
+                    <a href="list.html"><button class="taskDeleteBtn hover:scale-105 transition-all shadow-md">Delete</button></a>
+                </p>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <br>
+
+  <footer>
+    <p>&copy;Dylan McDougall 2023</p>
+    <p>&copy;Kiran Chandra 2023</p>
+    <p>&copy;Yousef Alanazi 2023</p>
+  </footer>
+
+</body>
+</html>

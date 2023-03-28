@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="list.css" type="text/css">
+    <link rel="stylesheet" href="detail.css" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+  <header>
+    <a href="/">
+      <img src="todologo.png"
+           alt="todo list logo"
+           float="right"
+           width="15%"
+           id="logo">
+    </a>
+
+    <div>
+      <h1>To Do Lists</h1>
+      <h2>make your own!</h2>
+    <div>
+
+    <nav>
+        <ul class="userLogin">
+            <li> <a href="index.html">|UserLogin|</a> </li>
+            <li> <a href="index.html">|Sign Up|</a></li> 
+        </ul>
+    </nav>
+  </header>
+
+  <main class="flex flex-col">
+    <div>
+        <div id="goback">
+            <a href="list.html">&larr; My To Do List</a>
+        </div>
+    </div>
+    <div id="tasks">
+      <div class="image-select">
+        <h2><b>Select picture per task type:</b></h2>
+        <div class="pictures">
+            <div>
+              <p>Classwork</p>
+              <img src="categories/classwork.jpeg" alt="Classwork" class="cat-img">
+            </div>
+            <div>
+              <p>Extracurricular</p>
+              <img src="categories/extracurricular.jpg" alt="Extracurricular" class="cat-img">
+            </div>
+            <div>
+              <p>Personal</p>
+              <img src="categories/personal.jpg" alt="Personal" class="cat-img">
+            </div>
+            <div>
+              <p>Shopping</p>
+              <img src="categories/shopping.jpg" alt="Shopping" class="cat-img">
+            </div>
+        </div>
+    </div>
+      <div class="category">
+          <h1>Finish webapps Milestone 1.</h1> <hr>
+          <div class="task">
+            <h2><b>Category:</b></h2> 
+              <p >Classwork</a></p>
+              <h2><b>Urgency:</b></h2> 
+              <p class="taskDeleteBtn transition-all shadow-md">Very Urgent.</p>
+              <h2><b>Start Date:</b></h2> 
+              <p>02/18/2023</p>
+              <h2><b>End Date:</b></h2> 
+              <p>02/19/2023</p>
+              <h2><b>Location:</b></h2> 
+              <p>Main Campus</p>
+              <h2><b>Status:</b></h2> 
+              <p>Pending</p>
+              <h2><b>Description:</b></h2> 
+              <p>This assignment provides the first step toward developing a dynamic web application by creating a set of static HTML5 pages for several core parts of the application flow. These pages serve as a look-and-feel design prototype for later functional / dynamic application development. This assignment is intended to (re)familiarize students with HTML development and navigation, as well as application design, deployment requirements, and assignment submission in the context of the course.</p>
+              
+          </div> <hr>
+          
+
+          <div class="flex flex-col items-center">
+            <a href="list.html">
+                <button id="create-new-btn" class="hover:scale-125 transition-all shadow-lg">Save Task</button>
+            </a>
+        </div>
+        
+        
+      
+  </main>
+
+
+
+  <footer>
+    <p>&copy;Dylan McDougall 2023</p>
+    <p>&copy;Kiran Chandra 2023</p>
+    <p>&copy;Yousef Alanazi 2023</p>
+  </footer>
+
+  <script src="createNew.js"></script>
+</body>
+</html>
